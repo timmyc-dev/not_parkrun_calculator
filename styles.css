@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat,  sans-serif;
+  background-color: burlywood;
+}
+
+header, footer {
+  width: 100vw;
+  text-align: center;
+  margin: 20px;
+}
+
+h1, h2, h3, h4 {
+  margin: 20px;
+}
+
+h1 a {
+  text-decoration: none;
+  color: black;
+}
+
+a {
+  align-content: right;
+}
+.list {
+  text-align: left;
+  margin-left: 30vw;
+}
+
+#btCalculate {
+  margin-left: 48vw;
+  width: 150px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: chartreuse;
+}
+#inputs {
+  display: grid;
+  margin-left: 40vw;
+  grid-template-columns: 250px 150px;    
+}
+
+#hours, #minutes, #seconds {
+  display: inline-block;
+}
+
+#output {
+  text-align: center;
+}
+
+#inputs input {
+  padding: 5px;
+  width: auto;
+  margin-bottom: 5px;
+  background-color: white;
+  text-align: right;
+}
+
+#time_inputs {
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+
+}
+
+#result {
+  /* width: 200px; */
+  border: 1px solid black;
+  padding: 5px;
+  font-weight: bold;
+  background-color: cyan;
+}
+
+main :focus-visible {
+  background-color: yellow;
+}
+
+#clip:hover {
+  cursor: pointer; 
+}
+

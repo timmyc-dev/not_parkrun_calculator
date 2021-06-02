@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="script.js" async defer></script>
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    
+    <script src="https://kit.fontawesome.com/a3c09e3783.js" crossorigin="anonymous"></script>
+
+    <title>(not) parkrun time</title>
+</head>
+<body>
+    <header>
+        <h1><a href="https://www.parkrun.org.uk/notparkrun/">(not) parkrun</a></h1>
+        <h4>Yes, the lowercase is intentional</h2>
+        <div class="list">
+
+            <p><strong>5k (not) parkrun time calculator</strong></p>
+            <p>If you run further than 5k (3.125 miles) then you can input your </p>
+            <ul>
+                <li>Distance (in miles)</li>
+                <li>Time in Minutes</li>
+                <li>and seconds</li>
+            </ul>
+        </div>
+        <p>Then the calculator will give you a time for running 5k</p> 
+    </header>
+    <main>
+        <div id="inputs">
+            <label for="distance">Distance (miles)</label>
+            <input id="distance" type="text" name="distance" >
+            <label for="minutes">Hours : Minutes : seconds </label>
+            <span id="time_inputs">
+                <input id="hours" type="text" name="hours"> 
+                <input id="minutes" type="text" name="minutes"> 
+                <input id="seconds" type="text" name="seconds">
+            </span>
+        </div>
+        <br>
+        <button id="btCalculate" onclick="calculateTime(event)">Hit Me</button>
+        <br>
+        <br>
+        <span id="output">
+            <p>Your time is:   <span id="result">Waiting for result</span></p>
+            <br>
+            <p>Copy to clipboard to paste into results: <input type="text" id="clipText"> <span onclick="copySpec(event)" id="clip"><i class="fas fa-clipboard"></i></span>
+            </p>
+        </span>
+
+        <footer>
+            <br>
+            <a href="https://connect.garmin.com/modern/activities" target="_blank">Garmin Activities</a>
+            <br><br>
+            <a href="https://www.strava.com/dashboard" target="_blank" style="color:#fc4c02">Strava Dashboard</a>
+            <br><br>
+            <a href="https://www.parkrun.com/profile/notparkrun?#existing" target="_blank">(not) parkrun profile [Enter your results here]</a> <br> <br>
+            <a href="https://www.parkrun.org.uk/ashtoncourt/results/notparkrun/" target="_blank">Ashton Court (not) parkrun results page</a>
+        </footer>
+
+    </main>
+</body>
+</html>
