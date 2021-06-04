@@ -5,10 +5,46 @@
   background-color: burlywood;
 }
 
-header, footer {
+
+
+header {
   width: 100vw;
   text-align: center;
   margin: 20px;
+}
+
+main {
+  text-align: center;
+  margin:auto;
+  display: grid;
+  max-width: 95%;
+  /* grid-template-rows: 33% 33% 33%; */
+}
+
+section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#waffle {
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#calculator {
+
+}
+
+#links {
+
+}
+
+main :focus-visible {
+  background-color: yellow;
 }
 
 h1, h2, h3, h4 {
@@ -29,12 +65,12 @@ a {
 }
 
 #btCalculate {
-  margin-left: 48vw;
   width: 150px;
   height: 40px;
   border-radius: 25px;
   background-color: chartreuse;
 }
+
 #inputs {
   display: grid;
   margin-left: 40vw;
@@ -69,10 +105,6 @@ a {
   padding: 5px;
   font-weight: bold;
   background-color: cyan;
-}
-
-main :focus-visible {
-  background-color: yellow;
 }
 
 #clip:hover {
