@@ -16,7 +16,7 @@
 </head>
 <body>
     <header>
-        <h1><a href="https://www.parkrun.org.uk/notparkrun/">(not) parkrun</a></h1>
+        <h1>(not) parkrun</h1>
         <h4>Yes, the lowercase is intentional</h4>
     </header>
 
@@ -38,15 +38,17 @@
       </section>
 
       <section id="calculator">
-        <div id="inputs">
-            <label for="distance">Distance (miles)</label>
-            <input id="distance" type="text" data-enterkey='hours' name="distance" placeholder="miles">
-            <label for="minutes">Hours : Minutes : seconds </label>
-            <span id="time_inputs">
-                <input id="hours" type="text" data-enterkey='minutes' name="hours" placeholder="hours" > 
-                <input id="minutes" type="text" data-enterkey='seconds' name="minutes" placeholder="mins"> 
-                <input id="seconds" type="text" data-enterkey='calculate' name="seconds" placeholder="secs">
-            </span>
+        <div class="middle">
+          <div id="inputs" >
+              <label for="distance">Distance (miles)</label>
+              <input id="distance" type="text" data-enterkey='hours' name="distance" placeholder="miles">
+              <label for="minutes">Hours : Minutes : seconds </label>
+              <span id="time_inputs">
+                  <input id="hours" type="text" data-enterkey='minutes' name="hours" placeholder="hours" > 
+                  <input id="minutes" type="text" data-enterkey='seconds' name="minutes" placeholder="mins"> 
+                  <input id="seconds" type="text" data-enterkey='calculate' name="seconds" placeholder="secs">
+              </span>
+          </div>
         </div>
         <div>
           <button type="button" id="btCalculate">Hit Me</button>
