@@ -21,29 +21,18 @@
     </header>
 
     <main>
-      <section id="waffle">
-        <div class="list">
-
-          <p><strong>5k (not) parkrun time calculator</strong></p>
-          <p>If you run further than 5k (3.125 miles) then you can input your </p>
-          <ul>
-              <li>Distance (in miles)</li>
-              <li>Time in Hours,</li>
-              <li>Minutes</li>
-            <li>and seconds</li>
-          </ul>
-        </div>
-        <br />
-        <p>Then the calculator will give you a time for running 5k</p> 
-      </section>
 
       <section id="calculator">
         <div class="middle">
           <div id="inputs" >
               <label for="distance">Distance (miles)</label>
               <input id="distance" type="text" data-enterkey='hours' name="distance" placeholder="miles">
-              <label for="minutes">Hours : Minutes : seconds </label>
-              <span id="time_inputs">
+              <span class="time_inputs">
+                <label for="hourss">Hours:</label>
+                <label for="minutes">Mins:</label>
+                <label for="seconds">secs </label>
+              </span>
+              <span class="time_inputs">
                   <input id="hours" type="text" data-enterkey='minutes' name="hours" placeholder="hours" > 
                   <input id="minutes" type="text" data-enterkey='seconds' name="minutes" placeholder="mins"> 
                   <input id="seconds" type="text" data-enterkey='calculate' name="seconds" placeholder="secs">
@@ -66,13 +55,14 @@
       </section>
 
       <section id="links">
-        <br>
-        <a href="https://connect.garmin.com/modern/activities" target="_blank">Garmin Activities</a>
-        <br><br>
-        <a href="https://www.strava.com/dashboard" target="_blank" style="color:#fc4c02">Strava Dashboard</a>
-        <br><br>
-        <a href="https://www.parkrun.com/profile/notparkrun?#existing" target="_blank">(not) parkrun profile [Enter your results here]</a> <br> <br>
-        <a href="https://www.parkrun.org.uk/ashtoncourt/results/notparkrun/" target="_blank">Ashton Court (not) parkrun results page</a>
+        <a href="https://connect.garmin.com/modern/activities" target="_blank" 
+          title="Activities">Garmin</a>
+        <a href="https://www.strava.com/dashboard" target="_blank" style="color:#fc4c02" 
+          title="Dashboard">Strava</a>
+        <a href="https://www.parkrun.com/profile/notparkrun?#existing" target="_blank" 
+          title="Enter results here">(not) parkrun results</a>
+        <a href="https://www.parkrun.org.uk/ashtoncourt/results/notparkrun/" target="_blank" 
+          title="Ashton Court">(not) parkrun results page</a>
       </section>
     </main>
 </body>
