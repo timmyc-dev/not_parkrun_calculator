@@ -63,9 +63,6 @@ h1 a {
   color: black;
 }
 
-a {
-  align-content: right;
-}
 .list {
   text-align: left;
   margin-left: 30vw;
@@ -117,3 +114,18 @@ label {
   flex-direction: column;
 }
 
+footer {
+  position: fixed;
+  height: 25px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #084b54;
+}
+
+footer > a {
+  background-color: #084b54;
+  color: white;
+}
