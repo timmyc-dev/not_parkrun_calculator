@@ -9,10 +9,7 @@ document.addEventListener('DOMContentLoaded', function(){
       }
       else {
         const idNext = event.target.getAttribute('data-enterkey');
-        console.log(`Next ${idNext}`);
-        
         document.getElementById(idNext).focus();      
-        
       }
     }
   })
@@ -30,16 +27,12 @@ const copySpec = () => {
   const clipText = document.getElementById('clipText');
 
   if (window.getComputedStyle(clipText).visibility === "hidden") {
-  console.log('It is hidden');
   clipText.style.visibility = 'visible';
   const copyText = document.querySelector('#clipText');
   copyText.select();
   document.execCommand('copy');
   clipText.style.visibility = 'hidden';
   }
-  console.log(` Inner HTML: ${document.getElementById('clipText').value}`);
-
-
 }
 
 function calculateTime(event) {
@@ -101,14 +94,9 @@ function calculateTime(event) {
   document.getElementById('clipText').value = clipString;
   document.getElementById('result').title = clipString;
 
-  console.log(document.querySelector('#copyToClipboard').checked);
-  
   if (document.querySelector('#copyToClipboard').checked) {
-    console.log('Copying');
-    
     copySpec()
   }
-  
 }
 
 
